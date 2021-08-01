@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPF_MARKET_APP.WindowViewTables"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_MARKET_APP"
+        mc:Ignorable="d"
+        Title="Просмотр таблицы" Height="450" Width="800">
+    <Grid>
+        <Menu Height="20" VerticalAlignment="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Выход"></MenuItem>    
+            </MenuItem>
+            <MenuItem Header="Открыть">
+                <MenuItem Header="Должность" Click="Doljnost_Click"></MenuItem>
+                <MenuItem Header="Доставка"></MenuItem>
+                <MenuItem Header="Категория товаров"></MenuItem>
+                <MenuItem Header="Клиент"></MenuItem>
+                <MenuItem Header="Производитель"></MenuItem>
+                <MenuItem Header="Сотрудники"></MenuItem>
+                <MenuItem Header="Заказы"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <DataGrid x:Name="dgMain" Margin="0,20,0,0">
+        </DataGrid>
+        <StackPanel VerticalAlignment="Bottom" x:Name="spContainer" Orientation="Vertical">
+            
+        </StackPanel>
+    </Grid>
+</Window>

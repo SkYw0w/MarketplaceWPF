@@ -1,0 +1,55 @@
+﻿<Window x:Class="WPF_MARKET_APP.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_MARKET_APP"
+        mc:Ignorable="d"
+        Title="Добавить" Height="400" Width="500"
+        MaxHeight="400" MaxWidth="500">
+    <Grid>
+        <Menu Height="40" VerticalAlignment="Top" Grid.Column="1">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Добавить"></MenuItem>
+                <MenuItem Header="Выход"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <StackPanel x:Name="spMain" Margin="0,40,0,0" Orientation="Vertical" Grid.Column="2">
+            <StackPanel Orientation="Horizontal">
+                <Label VerticalAlignment="Center" Margin="5,0,0,0" FontWeight="Bold">Название</Label>
+                <TextBox x:Name="tbName" Margin="7,5,5,5" Width="400" Height="25"></TextBox>
+            </StackPanel>
+            <StackPanel Height="50" Orientation="Horizontal">
+                <Label VerticalAlignment="Center" Margin="5,0,0,0" FontWeight="Bold">Описание</Label>
+                <TextBox x:Name="tbDescription"  Margin="5,5,5,5" Height="26" Width="400"></TextBox>
+            </StackPanel>
+            <StackPanel Height="30" Orientation="Horizontal">
+                <Label VerticalAlignment="Center" FontWeight="Bold" Margin="5,0,0,0">Цена</Label>
+                <TextBox x:Name="tbPrice" Margin="32,5,5,5" Height="25" Width="100" TextInput="tbPrice_TextInput" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label VerticalAlignment="Center" Margin="5,0,0,0" FontWeight="Bold">Изображения (до 4 штук)</Label>
+                <Button x:Name="btnImage" Height="30" Click="btnImage_Click" Content="Выбрать изображения" Margin="35, 0, 10, 0" AutomationProperties.IsRowHeader="True" Background="#42e3f5" BorderBrush="White"/>
+                <StackPanel Orientation="Vertical">
+                    <Label x:Name="lPath1" FontSize="8">Нет изображения</Label>
+                    <Label x:Name="lPath2" FontSize="8" Content="Нет изображения"/>
+                    <Label x:Name="lPath3" FontSize="8">Нет изображения</Label>
+                    <Label x:Name="lPath4" FontSize="8">Нет изображения</Label>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="5,0,0,0" FontWeight="Bold">Категория товара</Label>
+                <ComboBox x:Name="cbCategory" Width="200" Margin="50,0,0,0"></ComboBox>
+            </StackPanel>
+            <StackPanel Margin="5,5,0,5" Orientation="Horizontal">
+                <Label FontWeight="Bold">Производитель</Label>
+                <ComboBox x:Name="cbManufacturer" Width="200" Margin="62,0,0,0"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="5,0,0,0">В наличии</Label>
+                <CheckBox x:Name="cboxActual" VerticalAlignment="Center"></CheckBox>
+            </StackPanel>
+            <Button x:Name="btnAdd" Height="30" Width="100" Click="btnAdd_Click" Background="#42e3f5" BorderBrush="White" AutomationProperties.IsRequiredForForm="True" Margin="0, 15, 0, 0">Добавить</Button>
+        </StackPanel>
+    </Grid>
+</Window>

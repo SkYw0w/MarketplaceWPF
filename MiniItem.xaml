@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="WPF_MARKET_APP.MiniItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_MARKET_APP"
+             mc:Ignorable="" 
+             Height="70.627" Width="181.8" Margin="0, 5" Background="#FFE7E7E7" AutomationProperties.IsRowHeader="True">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="166*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Height="25" Text="Название" x:Name="tblName" Width="181" HorizontalAlignment="Left" Padding="1"></TextBlock>
+            <StackPanel Orientation="Horizontal" Width="181" HorizontalAlignment="Left" Height="45">
+                <TextBlock Height="45" Text="Цена" Width="93" x:Name="tblPrice" Padding="1"/>
+                <Button x:Name="btnDeleteFromBascet" Content="Del" Background="#42e3f5" Cursor="Hand" Width="52" BorderBrush="White" Height="23" Margin="0, -21, 0, 0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

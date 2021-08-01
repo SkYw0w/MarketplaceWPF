@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ImageSliderControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ItemWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MiniItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowIn.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowViewTables.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowZakaz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ImageSliderControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ItemWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiniItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowIn.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowViewTables.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowZakaz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
